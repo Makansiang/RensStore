@@ -1,0 +1,616 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    scroll-behavior: smooth;
+}
+body{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bdbdbd;
+ 
+ 
+}
+header{
+    width: 90%;
+height: 400px;
+margin: 0 auto;
+background-image: url('../assets/img/logo/logoooo.png');
+background-size: cover;
+width: 100%;
+height: 100vh;
+}
+header.foto1{
+    width: 100%;
+}
+
+.katakata{
+    position: absolute;
+    top: 330px;
+    left: 150px;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    animation: grkk ease-in-out infinite;
+    animation-duration: 5s;
+    }
+    @keyframes grkk{
+        0%{
+            transform: translateY(-20px);
+        }
+        50%{
+            transform: translateY(20px);
+        }
+        100%{
+            transform: translateY(-20px);
+        }
+    }
+.wa{
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    width: 53px;
+    height: 53px;
+    border-radius: 100%;
+    background-color: #00c72b;
+    cursor:pointer;
+    z-index: 3;
+  
+}
+.chat{
+
+    margin: 3px 7px;
+    color: white;
+    font-size: 2.8em;
+
+}
+.back{
+    position: fixed;
+    text-decoration: none;
+    bottom: 100px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 119, 0);
+    box-shadow: 0 0 5px rgb(51, 51, 51);
+    cursor:pointer;
+    color: white;
+    z-index: 3;
+}
+.back span{
+    position: relative;
+    top:10px;
+    left: 10px;
+    font-size: 30px;
+}
+
+nav{
+width: 90%;
+height: 60px;
+margin: 0 auto;
+position: fixed;
+top: -10px;
+left: 60px;
+z-index: 9;
+
+
+}
+
+.nav-list{
+    display: flex;
+background-color: rgb(51, 51, 51);
+box-shadow: inset 10px 15px 15px black;
+
+
+}
+.nav-item{
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50%;
+height: 60px;
+}
+.nav-link{
+text-decoration: none;
+transition: 0.5s all ;
+font-weight: 700;
+color: rgb(255, 119, 0);
+padding: 10px 15px;
+}
+.nav-link:hover{
+color: black;
+background-color: rgb(255, 119, 0);
+
+}
+.fr{
+    position: fixed;
+    left: 60px;
+    width: 90%;
+    top: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+
+}
+.cari{
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    outline: none;
+    border:none;
+    border-radius: 20px 0 0 20px;
+
+
+}
+.kirim{
+    position: relative;
+    width: 20%;
+    left:0;
+    height: 35px;
+    outline: none;
+    border:none;
+    border-radius:  0 20px 20px 0;
+    transition: .5s all;
+}
+.kirim:hover{
+    background-color: rgb(255, 119, 0);
+ 
+
+}
+.kirim span{
+    color:blue
+}
+/* content best product */
+.container{
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 20px; 
+}
+
+.title{
+ text-align: center;
+ font-size: 2em;
+ position:relative;
+ padding-bottom: 8px;
+ margin-bottom: 20px;
+}
+.title::after{
+content: "";
+position: absolute;
+width: 80px;
+height: 4px;
+background-color: rgb(255, 119, 0);
+bottom: 0;
+left: 50%;
+transform: translate(-50%);
+}
+.row{
+    display:flex ;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col{
+    position: relative;
+    flex-basis: 50%;
+    gap: 10px;
+    margin-top:10px;
+    height: 200px;
+    background-image: url("img/logo/si.png");
+    background-size: cover;
+    min-width: 200px; 
+    overflow: hidden; 
+}
+.col::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: 100%;
+left: 0;
+
+
+background-image: url("img/logo/sib.png");
+transition: 0.5s ease;
+
+
+}
+.col:hover::before{
+    top:0;
+    overflow: hidden;
+
+}
+.coll{
+    position: relative;
+    flex-basis: 50%;
+    gap: 10px;
+    margin-top:10px;
+    height: 200px;
+    background-image: url("img/logo/cp.png");
+    background-size: cover;
+    min-width: 200px; 
+    overflow: hidden; 
+}
+.coll::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: -100%;
+background-image: url("img/logo/cpwcpw.png");
+transition: 0.5s ease;
+
+
+}
+.coll:hover::before{
+    top: 0;
+
+}
+
+
+
+
+/* content product */
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; 
+ }
+
+ .row-2{
+     display:flex ;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ .col-2{
+     flex-basis: 20%;
+     /* position: relative; */
+     gap: 10px;
+     height: 310px;
+     margin:6px;
+     border-radius: 10px;
+     min-width: 200px;  
+     padding: 0;
+     margin-bottom:20px;
+     background: rgb(211, 211, 211);
+     box-shadow:0 0 5px black;
+     overflow: hidden;
+
+ }
+ .col-2 img{
+     width: 100%;
+     height: 200px;
+     border-radius: 10px 10px 0 0 ;
+     transition: 0.5s ease;
+ }
+ .col-2 img:hover{
+    transform:scale(1.1) ;
+ }
+.bungkus{
+    width: 100%;
+    padding:15px 10px;
+    height: 120px;
+    border-top: 5px solid rgb(255, 119, 0);
+    background-color: #2f2f2f;
+    border-radius: 0 0 10px 10px;
+}
+ .col-2 span{
+
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+ }.col-2 p{
+ 
+    font-size: 13px;
+    color:rgb(113, 113, 113);
+ }
+
+ 
+ .buy{
+    width: 100px;
+    cursor: pointer;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+   color: black ;
+   box-shadow: 5px 5px 10px black,inset 0 0 5px black ;
+    font-weight: 600;
+
+    transition: 0.5s all;
+    /* border-radius: 10px; */
+ }
+ .buy:hover{
+
+    background-color:rgb(255, 119, 0);
+    color: black;
+
+ }
+ /* scrooll */
+ .naik{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 35px;
+    height: 35px;
+    background-color:rgb(255, 119, 0);
+    z-index: 100;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .naik .upp{
+    margin: 10px ;
+  }
+  .muncul{
+    opacity: 1;
+  }
+  
+/* footer */
+footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px; 
+    background-color:#2e2e2e ;
+    text-transform: capitalize;
+    
+}
+footer p{
+    color:white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.semua-footer{
+    display:flex ;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-wrap{
+    flex-basis: 25%;
+    height: 200px;
+    gap: 10px;
+    /* margin:10px; */
+    border-radius: 10px;
+    min-width: 200px;  
+    padding: 10px;
+    margin-bottom:20px;
+
+}
+.text1{
+    font-size: 23px;
+    color: white;
+    font-weight: 700;
+}
+.text2{
+    font-size: 20px;
+    color: rgb(255, 119, 0);
+    font-weight: 600;
+}
+.text3{
+    text-transform: lowercase;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.text3 ul{
+    display: flex;
+    flex-direction: column;
+}
+.text3 ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    list-style: none;
+}
+.text3 a{
+margin: 10px 0;text-decoration: none;color: white;
+}
+.text3 a:hover{
+    color: var(--c);
+}
+.text3 i{
+    font-size: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.form .input{
+    width: 90%;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0;
+    background-color: #2e2e2e;
+    border: none;
+    border-bottom: 2px solid rgb(255, 119, 0);
+    color: rgb(255, 119, 0);
+    outline: none;
+}
+.form .input1{
+    border-radius: 0;
+    height: 50px;
+    width: 90%;
+    background-color: #2e2e2e;
+    border: none;
+    color:  rgb(255, 119, 0);
+    border-bottom: 2px solid rgb(255, 119, 0);
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+}
+.form .btn{
+    border-radius: 0;
+    margin-top: 10px;
+    padding: 5 20px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    outline: none;
+    border:none;
+    transition: .5s all;
+}
+
+
+.btn:hover{
+    background-color: rgb(255, 119, 0);
+
+}
+.copy{
+    width: 100%;
+    height: 24px;
+    margin-top: 20px;
+}
+.copy p{
+    padding: 10px;
+}
+/* device mobile */
+@media screen and (max-width:487px) {
+.wa{
+    bottom: 110px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+}
+.chat{ 
+    margin: -1px 0;
+    color: white;
+    font-size: 2.8em;
+}
+.back{
+    bottom: 156px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+}
+.back span{
+    font-size: 15px;
+    top: 7px;
+    left: 8px;
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.fr{
+    top: 562px;
+    background-color: rgb(227, 227, 227);
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+.cari{
+    box-shadow: 0 0 5px black;
+}
+.kirim{
+    box-shadow: 0 0   5px black;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    bottom: 15px;
+    padding: 10px;
+    left: 0;
+z-index: 9;
+}
+.nav-list{
+    background-color: rgb(51, 51, 51);
+box-shadow: inset -10px -15px 15px black;
+}
+.nav-link{
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.col{
+    flex-basis: 100%;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 130px;
+}
+.col::before{
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    left: -100%;
+}
+.col:hover::before{
+    top: 0;
+    left: 0;
+}
+
+
+.coll{
+    flex-basis: 100%;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+
+    height: 130px;
+}
+.coll::before{
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 100%;
+}
+.coll:hover::before{
+    top: 0;
+    left: 0;
+}
+.col-2{
+    flex-basis: 60%;
+}
+.col-2 span{
+    font-size: 16px;
+}
+footer{
+    width: 100%;
+    height:auto;
+    margin-bottom: 60px;
+}
+.footer-wrap{
+    flex-basis: 100%;
+}
+.input{
+
+margin-top: 20px;
+padding-left: 10px;
+    width: 90%;
+    height: 20px;
+}
+.input1{
+    width: 90%;
+    padding: 5px;
+}
+.katakata{
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    font-size: 20px;
+
+    }
+}
