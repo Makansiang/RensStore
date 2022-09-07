@@ -2,8 +2,8 @@ document.getElementById('year').innerHTML = new Date().getFullYear()
 
 function chat(product_name,product_price){
     const message =`hello saya mau beli ${product_name} - ${product_price}`
-    const whastapp = `https://wa.me?/6281219803211= ${message}`
-    location.href= whastapp
+    const whastapp = `https://wa.me?/6281219803211?text=${message}`
+    open(whastapp,"_blank")
 }
 
 
